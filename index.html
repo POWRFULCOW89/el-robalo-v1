@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>El Robalo</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+    <img
+      id="drop"
+      title="Ocultar categorías"
+      width="40px"
+      height="40px"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+    />
+
+    <iframe id="sup" width="100%" height="160px" src="superior.html"></iframe
+    ><br />
+
+    <div id="cuerpo">
+      <iframe id="menu" width="20%" height="100%" src="menu.html"></iframe>
+      <iframe
+        id="centro"
+        name="contenido"
+        width="80%"
+        height="100%"
+        src="inicio.html"
+      ></iframe>
+    </div>
+
+    <iframe id="pie" width="100%" height="350px" src="pie.html"></iframe>
+
+    <table width="100%" bgcolor="#dedfde">
+      <tr>
+        <td align="left">
+          <font size="3" face="Trebuchet MS, Arial, Helvetica, sans-serif"
+            >© 2019 El Robalo</font
+          >
+        </td>
+        <td align="center">
+          <font size="3" face="Trebuchet MS, Arial, Helvetica, sans-serif"
+            >Todos los derechos reservados</font
+          >
+        </td>
+        <td align="right">
+          <font size="3" face="Trebuchet MS, Arial, Helvetica, sans-serif"
+            ><a id="back" href="#sup">Regresar al inicio</a></font
+          >
+        </td>
+      </tr>
+    </table>
+  </body>
+  <!--
+        ---CSS---
+        
+        =Los iframes no ocupan el 100% del ancho de la página
+        =Colores: Azul(#3269a8) Rojo(rgb(251,58,31)) Blanco(whitesmoke)
+
+    -->
+  <script>
+    var b = document.getElementById("cuerpo");
+    b.style.display = "flex";
+    b.style.height = "90%";
+    var drop = document.getElementById("drop");
+    drop.style.position = "fixed";
+    drop.style.bottom = "0";
+    drop.style.left = "0";
+    drop.style.zIndex = "1";
+    drop.style.backgroundColor = "lightgray";
+    drop.style.cursor = "pointer";
+    var aside = document.getElementById("menu");
+    var centro = document.getElementById("centro");
+    aside.style.width = "20%";
+    centro.style.width = "80%";
+    document.getElementById("back").style.float = "right";
+    document.getElementById("back").style.margin = "10px";
+    document.getElementById("back").style.position = "relative";
+    document.getElementById("pie").style.border = "3px groove rgb(251,58,31)";
+    function cambiarAncho() {
+      if (aside.style.width == "20%") {
+        var ancho_drop = 20;
+        var ancho_centro = 80;
+        var tiempo = setInterval(mov, 8);
+        function mov() {
+          if (aside.style.width == "0%") {
+            clearInterval(tiempo);
+            aside.style.visibility = "hidden";
+          } else {
+            ancho_drop--;
+            ancho_centro++;
+            aside.style.width = ancho_drop + "%";
+            centro.style.width = ancho_centro + "%";
+          }
+        }
+      }
+      if (aside.style.width == "0%") {
+        aside.style.visibility = "visible";
+        var ancho_drop = 0;
+        var ancho_centro = 100;
+        var tiempo = setInterval(mov, 8);
+        function mov() {
+          if (aside.style.width == "20%") {
+            clearInterval(tiempo);
+          } else {
+            ancho_drop++;
+            ancho_centro--;
+            aside.style.width = ancho_drop + "%";
+            centro.style.width = ancho_centro + "%";
+          }
+        }
+      }
+    }
+    drop.addEventListener("click", cambiarAncho);
+  </script>
+</html>

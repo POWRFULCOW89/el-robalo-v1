@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <title>Pie de página</title>
+    <script>
+      /*---Simple Javascript CAPTCHA---*/
+      /*source:https://sourcefirst.wordpress.com/2007/05/02/simple-javascript-captcha/*/
+      var a = Math.ceil(Math.random() * 10);
+      var b = Math.ceil(Math.random() * 10);
+      var c = a + b;
+      function pregunta() {
+        document.write("¿Cuánto es " + a + " + " + b + "? ");
+        document.write("");
+      }
+      function validar() {
+        var d = document.getElementById("BotBootInput").value;
+        if (d == c) return "¡Tu mensaje se ha enviado con éxito!";
+        return "Ha ocurrido un error al enviar el mensaje. Por favor inténtalo de nuevo más tarde.";
+      }
+      /*--------------*/
+    </script>
+  </head>
+  <body>
+    <table id="tabla" height="100%">
+      <tr>
+        <td align="center">
+          <img
+            width="150px"
+            height="60px"
+            alt="shimano"
+            src="https://cdn.shopify.com/s/files/1/0694/2765/files/shimano_logo.gif?9340561896290514018"
+          />
+        </td>
+        <td align="center">
+          <img
+            width="220px"
+            height="60px"
+            alt="piscifun"
+            src="https://www.thrasherapparel.com/uploads/6/1/4/2/6142425/published/p-logo-white.png?1540561258"
+          />
+        </td>
+        <td align="center">
+          <img
+            width="150px"
+            height="60px"
+            alt="grauvell"
+            src="https://www.casafavais.com/resources/medias/shop/manufacturers/thumbnails/shop-image-xlarge/logo-grauvell.png"
+          />
+        </td>
+        <td align="center">
+          <img
+            width="160px"
+            height="60px"
+            alt="lineaffe"
+            src="https://pleamartiendadepesca.com/wp-content/uploads/2019/02/lineaeffe.png"
+          />
+        </td>
+        <td align="center">
+          <img
+            width="160px"
+            height="60px"
+            alt="berkley"
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-f071/k2-_27dae3e4-1c7d-4637-a203-c9c1ad7f06ed.v1.png"
+          />
+        </td>
+        <td align="center">
+          <img
+            width="160px"
+            height="60px"
+            alt="mitchell"
+            src="https://seeklogo.com/images/M/Mitchell-logo-BB79978493-seeklogo.com.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <img height="200px" width="350px" src="logo-3.jpg" />
+        </td>
+        <td colspan="2" align="center">
+          <div width="100%">
+            <fieldset>
+              <legend>Cont&aacutectanos</legend>
+              <table>
+                <tr>
+                  <td><label>Nombre: </label></td>
+                  <td><input /></td>
+                </tr>
+                <tr>
+                  <td><label>Correo: </label></td>
+                  <td><input /></td>
+                </tr>
+                <tr>
+                  <td><label>Mensaje: </label></td>
+                  <td><textarea style="resize: none"></textarea></td>
+                </tr>
+                <tr>
+                  <td id="contenedor-captcha">
+                    <script type="text/javascript">
+                      pregunta();
+                    </script>
+                  </td>
+                  <td>
+                    <input
+                      id="BotBootInput"
+                      type="text"
+                      maxlength="2"
+                      size="2"
+                      placeholder="Captcha"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp</td>
+                  <td>
+                    <input
+                      id="Button1"
+                      type="button"
+                      value="Enviar"
+                      onclick="alert(validar());"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
+        </td>
+        <td colspan="2" align="center">
+          <table id="subtabla">
+            <col width="15%" />
+            <col width="25%" />
+            <col width="60%" />
+            <tr>
+              <td>
+                <a
+                  href="https://www.facebook.com/pages/category/Sports---Recreation/El-Robalo-1141799235874480/"
+                  target="_blank"
+                >
+                  <img
+                    width="40px"
+                    height="40px"
+                    alt="fb"
+                    src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png"
+                  />
+                </a>
+              </td>
+              <td>
+                <a
+                  href="https://www.facebook.com/pages/category/Sports---Recreation/El-Robalo-1141799235874480/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </td>
+              <td>
+                &nbsp;&nbsp;&nbsp;<font
+                  size="3"
+                  face="Trebuchet MS, Arial, Helvetica, sans-serif"
+                  >¿Quiénes somos?</font
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    width="40px"
+                    height="40px"
+                    alt="in"
+                    src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                  />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.instagram.com/" target="_blank">
+                  Instagram
+                </a>
+              </td>
+              <td>
+                &nbsp;&nbsp;&nbsp;<font
+                  size="3"
+                  face="Trebuchet MS, Arial, Helvetica, sans-serif"
+                  >Política de privacidad</font
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img
+                    width="40px"
+                    height="40px"
+                    alt="tw"
+                    src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png"
+                  />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.twitter.com/" target="_blank"> Twitter </a>
+              </td>
+              <td>
+                &nbsp;&nbsp;&nbsp;<font
+                  size="3"
+                  face="Trebuchet MS, Arial, Helvetica, sans-serif"
+                  >Aviso legal</font
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <center>
+                  <details>
+                    <summary>
+                      <font
+                        size="3"
+                        face="Trebuchet MS, Arial, Helvetica, sans-serif"
+                        >Puedes encontrarnos en:
+                      </font>
+                    </summary>
+                    <address id="direccion">
+                      <a
+                        href="https://goo.gl/maps/4HShbJ7wjepN8TtE6"
+                        target="_blank"
+                      >
+                        <br />Av. Gral. Prim 282, <br />Ricardo Flores
+                        Mag&oacuten, <br />91900 Veracruz, Ver., M&eacutexico
+                        <br />
+                        Tel&eacutefono: +52 229 283 2643
+                      </a>
+                    </address>
+                  </details>
+                </center>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    document.getElementById("BotBootInput").style.width = "40%";
+    document.body.style.backgroundColor = "#3269a8";
+    document.body.style.fontFamily = "Arial";
+    var dir = document.getElementById("direccion");
+    dir.style.textShadow = "1px 1px #9a9a9a";
+    dir.style.color = "inherit";
+    var tab = document.getElementById("tabla");
+    tab.style.padding = "3px";
+    tab.style.fontSize = "1.2vw";
+    tab.style.width = "100%";
+    var subtab = document.getElementById("subtabla");
+    subtab.style.fontSize = "1vw";
+    subtab.style.marginLeft = "auto";
+    subtab.style.marginRight = "auto";
+  </script>
+</html>

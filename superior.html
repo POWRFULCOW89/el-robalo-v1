@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Superior</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <table id="tabla" width=100% >
+            <tr height=100px>
+                <td width=260px>
+                    <a href="inicio.html" target="contenido">
+                        <img title="El Robalo" id="logo" alt=logo src="logo-4.jpg" width=250px height=100px> 
+                
+                    </a>
+                </td>
+                <td>
+                    <input id="buscar" tabindex="1" placeholder="¿Qué estás buscando?..." type="search">
+                </td>
+                <td>
+                    <button id="cuenta" tabindex="2" class="top">Mi cuenta</button>
+                </td>
+                <td>
+                    <button id="carro" tabindex="3" class="top">Carrito</button>
+                </td>
+            </tr>
+            <tr height=20px>
+                <td colspan="5">
+                    <marquee scrollamount="10">Este Buen Fin, aprovecha lo último de las marcas Berkley, Lineaffe y Shimano con descuentos, ¡de hasta el 30%! ¡Te esperamos!</marquee>
+                </td>
+            </tr>
+        </table>
+        <script>
+                var b = document.getElementsByTagName("body")[0];
+                b.style.backgroundColor="rgb(237,51,38)";
+                var tabla = document.getElementById("tabla");
+                //tabla.style.border="1px solid black";
+                var m = document.getElementsByTagName("marquee")[0];
+                m.style.fontSize="22px";
+                m.style.fontFamily="Arial";
+                m.style.backgroundColor="whitesmoke";
+                m.style.margin="3px";
+                var buscar = document.getElementById("buscar");
+                buscar.style.width="100%";
+                buscar.style.height="40px";
+                buscar.style.fontSize="20px";
+                buscar.style.backgroundImage="url(https://www.konfest.com/wp-content/uploads/2019/05/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-icons-search-symbol-find-magnifying-glass-78.png)";
+                buscar.style.backgroundSize="30px";
+                buscar.style.backgroundPositionX="4px";
+                buscar.style.backgroundPositionY="2px";
+                buscar.style.backgroundRepeat="no-repeat";
+                buscar.style.textIndent="40px";
+                var cta = document.getElementById("cuenta");
+                cta.style.height="40px";
+                cta.style.width="100%";
+                cta.style.fontSize="19px";
+                var carro = document.getElementById("carro");
+                carro.style.height="40px";
+                carro.style.width="100%";
+                carro.style.fontSize="19px";
+            </script>
+    </body>
+</html>

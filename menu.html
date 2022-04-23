@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Menú</title>
+    </head>
+    <body id="cuerpo">
+            <hr>
+            <p id="titulo">Categorías</p>
+            <hr>
+            <a target="contenido" href="accesorios.html">&nbsp&nbspAccesorios</a>
+            <a target="contenido" href="anzuelos.html">&nbsp&nbspAnzuelos</a>
+            <a target="contenido" href="canas.html">&nbsp&nbspCañas</a>
+            <a target="contenido" href="carretes.html">&nbsp&nbspCarretes</a>
+            <a target="contenido" href="lineas.html">&nbsp&nbspMultifilamentos</a>
+            <a target="contenido" href="monofilamentos.html">&nbsp&nbspMonofilamentos</a>
+            <a target="contenido" href="plomos.html">&nbsp&nbspPlomos</a>
+            <a target="contenido" href="senuelos.html">&nbsp&nbspSeñuelos</a>
+            <hr>
+    </body>
+    <script>
+        var b = document.getElementById("cuerpo");
+        b.style.backgroundColor="#3269a8";
+        var title = document.getElementById("titulo");
+        title.style.fontSize="7vw";
+        title.style.color="whitesmoke";
+        title.style.fontFamily="Arial";
+        title.style.textAlign="center";
+
+        
+        var links = document.getElementsByTagName("a");
+        for (i=0;i<links.length;i++) {
+            var e = links[i];
+            e.style.backgroundColor="whitesmoke";
+            e.style.float="left";
+            e.style.display="flex";
+            e.style.flexDirection="column";
+            e.style.justifyContent="center";
+            e.style.alignContent="center";
+            e.style.width="98%";
+            e.style.border="1px solid black";
+            e.style.height="10%";
+            e.style.fontSize="2.6vh";
+            e.style.fontFamily="Arial";
+            e.style.textDecoration="none";
+            e.style.color="black";
+            e.style.marginBottom="5px";
+            e.style.borderRadius="10px";
+            e.style.paddingleft = "2px";
+            e.style.boxShadow="3px 3px lightgray"; 
+        }
+    </script>
+    <!--
+        ***Accesorios
+        Anzuelos
+        ***Líneas
+        Monofilamentos
+        Plomos
+        Cañas
+        Carretes
+        Señuelos
+    -->
+
+</html>
